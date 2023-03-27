@@ -2,7 +2,7 @@
 
 // Cube a variable using Pass-By-Value
 /*
-int cubeByValue(int n);
+int cubeByValue(int n); // Function prototype
 
 int main(void){
 
@@ -25,6 +25,8 @@ int cubeByValue(int n){
 }
 */
 
+
+
 // Cube a variable using Pass-By-Reference with a pointer argument.
 
 void cubeByReference(int *nPtr); // Function prototype
@@ -45,6 +47,6 @@ int main(void){
 // Calculate cube of *nPtr; actually modifies number in main
 void cubeByReference(int *nPtr){
 
-    *nPtr = *nPtr * *nPtr * *nPtr;
+    *nPtr = *nPtr * *nPtr * *nPtr; // cube *nPtr
 
 }
