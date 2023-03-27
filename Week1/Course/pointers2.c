@@ -25,6 +25,7 @@ int cubeByValue(int n){
 }
 */
 
+// Cube a variable using Pass-By-Reference with a pointer argument.
 void cubeByReference(int *nPtr);
 
 int main(void){
