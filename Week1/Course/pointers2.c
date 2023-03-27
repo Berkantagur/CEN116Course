@@ -26,14 +26,16 @@ int cubeByValue(int n){
 */
 
 // Cube a variable using Pass-By-Reference with a pointer argument.
-void cubeByReference(int *nPtr);
+
+void cubeByReference(int *nPtr); // Function prototype
 
 int main(void){
 
-    int number = 6;
+    int number = 6; // Initialize number
 
     printf("The original value of number is %d", number);
 
+    // Pass address of number to cubeByReference
     cubeByReference(number);
 
     printF("\nThe new value of number is %d\n", number);
