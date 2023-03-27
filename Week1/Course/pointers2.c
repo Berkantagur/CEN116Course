@@ -38,10 +38,11 @@ int main(void){
     // Pass address of number to cubeByReference
     cubeByReference(number);
 
-    printF("\nThe new value of number is %d\n", number);
+    printf("\nThe new value of number is %d\n", number);
 
 }
 
+// Calculate cube of *nPtr; actually modifies number in main
 void cubeByReference(int *nPtr){
 
     *nPtr = *nPtr * *nPtr * *nPtr;
