@@ -38,3 +38,9 @@ int main(void){
     printF("\nThe new value of number is %d\n", number);
 
 }
+
+void cubeByReference(int *nPtr){
+
+    *nPtr = *nPtr * *nPtr * *nPtr;
+
+}
