@@ -38,7 +38,7 @@ int main(void){
     printf("The original value of number is %d", number);
 
     // Pass address of number to cubeByReference
-    cubeByReference(number);
+    cubeByReference(&number);
 
     printf("\nThe new value of number is %d\n", number);
 
