@@ -24,3 +24,17 @@ int cubeByValue(int n){
 
 }
 */
+
+void cubeByReference(int *nPtr);
+
+int main(void){
+
+    int number = 6;
+
+    printf("The original value of number is %d", number);
+
+    cubeByReference(number);
+
+    printF("\nThe new value of number is %d\n", number);
+
+}
