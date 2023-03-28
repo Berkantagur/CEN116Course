@@ -11,7 +11,7 @@ int main(void){
     printf("n's address(&n): %p\n", &n);
 
     printf("nPtr = %p\n", nPtr);
-    printf("*nPtr: %d\n", *nPtr);
+    printf("*nPtr: %d\n", *nPtr); //indirection operator (showing the data in the address)
 
 
     return 0;
