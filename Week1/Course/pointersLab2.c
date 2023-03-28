@@ -7,16 +7,26 @@ int pbv(int n);
 
 int main(void) {
 
-    int number = 9;
-    printf("Number: %d\n", number);
-    pbr(&number);
-    printf("Number: %d\n", number);
+    int number1 = 9;
+    printf("Number1: %d\n", number1);
+    pbr(&number1);
+    printf("New Number1: %d\n", number1);
+
+    int number2 = 3;
+    printf("Number2: %d\n", number2);
+    int result = pbv(number2);
+    printf("New Number2: %d\n", result);
 
     return 0;
 }
 
-void pbr(int *n){
+void pbr(int *n) {
 
     *n = *n + *n;
 
+}
+
+int pbv(int n){
+
+    return n = n * n;
 }
