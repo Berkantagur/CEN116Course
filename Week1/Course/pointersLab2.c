@@ -14,3 +14,9 @@ int main(void) {
 
     return 0;
 }
+
+void pbr(int *n){
+
+    *n = *n + *n;
+
+}
