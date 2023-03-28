@@ -17,6 +17,9 @@ int main(void) {
     int result = pbv(number2);
     printf("New Number2: %d\n", result);
 
+    pbv(number2);
+    printf("IsNewNumber2: %d", number2);
+
     return 0;
 }
 
