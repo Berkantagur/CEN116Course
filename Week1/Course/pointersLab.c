@@ -14,5 +14,10 @@ int main(void){
     printf("*nPtr: %d\n", *nPtr); //indirection operator (showing the data in the address)
 
 
+    float f = 4.03;
+    float *fPtr = &f;
+
+    printf("*fPtr: %d", *fPtr);
+
     return 0;
 }
