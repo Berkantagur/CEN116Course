@@ -17,7 +17,7 @@ int main(void){
     float f = 4.03;
     float *fPtr = &f;
 
-    printf("*fPtr: %d", *fPtr);
+    printf("*fPtr: %f", *fPtr);
 
     return 0;
 }
