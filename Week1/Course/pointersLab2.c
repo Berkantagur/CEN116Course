@@ -7,7 +7,7 @@ int pbv(int n);
 
 int main(void) {
 
-    int number1 = 9;
+    int number1 = 3;
     printf("Number1: %d\n", number1);
     pbr(&number1);
     printf("New Number1: %d\n", number1);
