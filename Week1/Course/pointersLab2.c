@@ -12,7 +12,7 @@ int main(void) {
     pbr(&number1);
     printf("New Number1: %d\n", number1);
 
-    int number2 = 3;
+    int number2 = 6;
     printf("Number2: %d\n", number2);
     int result = pbv(number2);
     printf("New Number2: %d\n", result);
