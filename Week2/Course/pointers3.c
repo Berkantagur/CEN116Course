@@ -37,4 +37,15 @@ int main(){
 
     }
 
+    // output array arr using arrPtr and pointer/offset notation
+    printf("\nPointer/offset notation\n");
+
+    // loop through array arr
+    for (offset=0; offset<4; offset++){
+
+        printf("*(arrPtr + %d) = %d\n", offset, *(arrPtr + offset));
+
+    }
+
+    return 0; //indicates successful termination
 }
