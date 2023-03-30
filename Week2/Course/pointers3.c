@@ -17,4 +17,6 @@ int main(){
         printf("arr[%d] = %d\n", i, arr[i]);
     }
 
+    // output array arr using array name and pointer/offset notation
+    printf("\nPointer/offset notation where\nThe pointer is the array name\n");
 }
