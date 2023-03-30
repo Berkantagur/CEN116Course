@@ -19,4 +19,12 @@ int main(){
 
     // output array arr using array name and pointer/offset notation
     printf("\nPointer/offset notation where\nThe pointer is the array name\n");
+
+    // loop through array arr
+    for (offset=0; offset<4; offset++){
+
+        printf("*(arr + %d ) = %d\n", offset, *(arr + offset));
+
+    }
+
 }
