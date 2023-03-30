@@ -8,4 +8,13 @@ int main(){
     int i; // counter
     int offset; //counter
 
+    // output array arr using array subscript notation
+    printf("Arr printed with:\nArray subscript notation\n" );
+
+    // loop through array arr
+    for (i=0; i<4; i++){
+
+        printf("arr[%d] = %d\n", i, arr[i]);
+    }
+
 }
