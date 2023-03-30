@@ -27,4 +27,14 @@ int main(){
 
     }
 
+    // output array arr using arrPtr and array subscript notation
+    printf("\nPointer subscript notation\n");
+
+    // loop through array arr
+    for (i=0; i<4; i++){
+
+        printf("arrPtr[%d] = %d\n", i, arrPtr[i]);
+
+    }
+
 }
