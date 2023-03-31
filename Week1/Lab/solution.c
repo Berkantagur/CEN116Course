@@ -14,7 +14,7 @@ int main(){
         printf("%3d", array[i]);
 
     bubleSort(array, SIZE);
-    printf("\nArray in ascending order:\n");
+    printf("\n\nArray in ascending order:\n");
 
     for (i=0; i<SIZE; i++)
         printf("%3d", array[i]);
@@ -24,13 +24,23 @@ int main(){
 
 void bubleSort(int *array, const int size){
 
-    int pass, j;
-    for (pass=0; pass<size-1; pass++)
+    int pass, k, j;
+
+    for (pass=0; pass<size-1; pass++){
+
+        printf("\nArray in pass |%d|", pass+1);
+
+        for (k=0; k<size; k++)
+
+            printf("%3d", array[k]);
+    
+        
         for (j=0; j<size-1; j++)
+
             if(array[j] > array[j+1])
 
     swap(&array[j], &array[j+1]);
-
+    }
 }
 
 void swap(int *ptr1, int *ptr2){
