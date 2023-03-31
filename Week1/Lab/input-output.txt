@@ -1,6 +1,7 @@
 ##Input
 2, 68, 5, 93, 18, 9, 4, 79, 27, 45
 
+
 ##Output
 Array in original order:
   2 68  5 93 18  9  4 79 27 45
