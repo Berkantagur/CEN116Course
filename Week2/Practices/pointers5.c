@@ -42,12 +42,12 @@ void division(int n1, int n2)
 }
 
 int main(){
-
+    // calculationMenu is an array of function pointers
     void (*calculationMenu[])(int, int) = {addition, substraction, multiply, division};
 
     unsigned int choice, n1 = 25, n2 = 10;
   
-    printf("Please enter your choice:\n0 --> Addition\n1 --> Subtraction\n2 --> Multiply\n3 --> Division\n");
+    printf("Please choice the operation you want to perform:\n0 --> Addition\n1 --> Subtraction\n2 --> Multiply\n3 --> Division\n");
     scanf("%d", &choice);
   
     if (choice > 3) 
