@@ -47,7 +47,7 @@ int main(){
 
     unsigned int choice, n1 = 25, n2 = 10;
   
-    printf("Please enter your choice: 0 for addition, 1 for subtraction, 2 for multiply, 3 for division...\n");
+    printf("Please enter your choice:\n0 --> Addition\n1 --> Subtraction\n2 --> Multiply\n3 --> Division\n");
     scanf("%d", &choice);
   
     if (choice > 3) 
