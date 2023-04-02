@@ -40,3 +40,28 @@ void division(int n1, int n2)
         printf("Result: %d", result);
     }
 }
+
+int main(){
+
+    void (*calculationMenu[])(int, int) = {addition, substraction, multiply, division};
+
+    unsigned int choice, n1 = 25, n2 = 10;
+  
+    printf("Please enter your choice: 0 for addition, 1 for subtraction, 2 for multiply, 3 for division...\n");
+    scanf("%d", &choice);
+  
+    if (choice > 3) 
+        return 0;
+  
+    (*calculationMenu[choice])(n1, n2);
+  
+    return 0;
+
+
+
+
+
+
+
+
+}
