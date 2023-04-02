@@ -32,12 +32,12 @@ void division(int n1, int n2)
 {
     if(n1 >= n2)
     {
-        result = n1 / n2;
-        printf("Result: %d", result);
+        float result = n1 / n2;
+        printf("Result: %f", result);
     }
     else{
-        result = n2 / n1;
-        printf("Result: %d", result);
+        float result = n2 / n1;
+        printf("Result: %f", result);
     }
 }
 
