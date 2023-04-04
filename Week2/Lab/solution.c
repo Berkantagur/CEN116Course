@@ -1,12 +1,12 @@
 #include <stdio.h>
 void swap(int *a, int *b);
 int ascending(int a, int b);
-int descending(int a, int b);
-void bubble(int work[], int size, int (*compare)(int a, int b)); 
+int descending(int a, int b); 
+void bubble(int a[], int size, int (*myFun)(int a, int b)); 
 
 int main(void) { 
 
-	int array[] = {3, 27, 18, 12, 9, 15, 6, 30, 24, 21}; 
+	int array[] = {6, 4, 8, 16, 10, 14, 12, 2, 18, 20}; 
 	int i, order; 
 
 	printf("Array in original order:\n"); 
@@ -15,9 +15,9 @@ int main(void) {
 		printf("%4d", array[i]); 
 	} 
 
-	printf( "\nEnter 1 to sort in ascending order, 2 to sort in descending order: "); 
+	printf( "\nEnter 1 to sort in ascending order, 2 to sort in descending order:"); 
     scanf("%d", &order); 
-    
+
     if (order == 1) 
         bubble(array, 10, ascending); 
 
@@ -47,16 +47,16 @@ int descending(int a, int b) {
     return a < b; 
 } 
 
-void bubble(int work[], int size, int (*compare)(int a, int b)) { 
-    
-    int count, pass; 
+void bubble(int a[], int size, int (*myFun)(int a, int b)) { 
+
+    int i, pass; 
 
     for (pass = 0; pass < size - 1; pass++) { 
 
-        for (count = 0; count < size - 1; count++){
+        for (i = 0; i < size - 1; i++){
 
-            if ((*compare)(work[count], work[count + 1])) 
-                swap(&work[count], &work[count + 1]);
+            if ((*myFun)(a[i], a[i + 1])) 
+                swap(&a[i], &a[i + 1]);
 
         }
 
