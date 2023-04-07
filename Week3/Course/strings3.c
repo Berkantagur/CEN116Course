@@ -14,4 +14,10 @@ int main(void){
         isupper('d')    ? "d is an " : "d is not an ", "uppercase letter",
         isupper('8')    ? "8 is an " : "8 is not an ", "uppercase letter",
         isupper('$')    ? "$ is an " : "$ is not an ", "uppercase letter");
+
+    printf("%s%c\n%s%c\n%s%c\n%s%c\n",
+        "u converted to uppercase is ", toupper('u')  ,
+        "7 converted to uppercase is ", toupper('7')  ,
+        "$ converted to uppercase is ", toupper('$')  ,
+        "L converted to lowercase is ", tolower('L')  );
 }
