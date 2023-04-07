@@ -9,4 +9,9 @@ int main(void){
         islower('5')    ? "5 is a " : "5 is not a ", "lowercase letter",
         islower('!')    ? "! is a " : "! is not a ", "lowercase letter");
 
+    printf("%s\n%s%s\n%s%s\n%s%s\n%s%s\n\n", "According to isupper:",
+        isupper('D')    ? "D is an " : "D is not an ", "uppercase letter",
+        isupper('d')    ? "d is an " : "d is not an ", "uppercase letter",
+        isupper('8')    ? "8 is an " : "8 is not an ", "uppercase letter",
+        isupper('$')    ? "$ is an " : "$ is not an ", "uppercase letter");
 }
