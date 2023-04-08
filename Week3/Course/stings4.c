@@ -23,4 +23,10 @@ int main(void){
         "punctuation character",
         ispunct('#')    ? "# is a " : "# is not a ",
         "punctuation character");
+
+    printf("%s\n%s%s\n%s%s%s\n\n", "According to isprint:",
+    isprint('$')    ? "$ is a " : "$ is not a ",
+    "printing character",
+    "Alert", isprint('\a')  ? " is a " : " is not a ",
+    "printing character");
 }
