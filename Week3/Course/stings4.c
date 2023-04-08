@@ -25,8 +25,14 @@ int main(void){
         "punctuation character");
 
     printf("%s\n%s%s\n%s%s%s\n\n", "According to isprint:",
-    isprint('$')    ? "$ is a " : "$ is not a ",
-    "printing character",
-    "Alert", isprint('\a')  ? " is a " : " is not a ",
-    "printing character");
+        isprint('$')    ? "$ is a " : "$ is not a ",
+        "printing character",
+        "Alert", isprint('\a')  ? " is a " : " is not a ",
+        "printing character");
+
+    printf("%s\n%s%s\n%s%s%s\n", "According to isgraph:",
+        isgraph('Q')    ? "Q is a " : "Q is not a ",
+        "printing character other than a space",
+        "Space", isgraph(' ')   ? " is a " : " is not a ",
+        "printing character other than a space");
 }
