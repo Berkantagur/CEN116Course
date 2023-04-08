@@ -15,4 +15,12 @@ int main(void){
         "Newline", iscntrl('\n')    ? " is a " : " is not a ",
         "control character", iscntrl('$')   ? "$ is a " :
         "$ is not a ", "control character");
+
+    printf("%s\n%s%s\n%s%s\n%s%s\n\n", "According to ispunct:",
+        ispunct(';')    ? "; is a " : "; is not a ",
+        "punctuation character",
+        ispunct('Y')    ? "Y is a " : "Y is not a ",
+        "punctuation character",
+        ispunct('#')    ? "# is a " : "# is not a ",
+        "punctuation character");
 }
