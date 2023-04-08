@@ -11,5 +11,8 @@ int main(void){
         isspace('%')    ? "% is a " : "% is not a ",
         "whitespace character");
 
-        
+    printf("%s\n%s%s%s\n%s%s\n\n", "According to iscntrl:",
+        "Newline", iscntrl('\n')    ? " is a " : " is not a ",
+        "control character", iscntrl('$')   ? "$ is a " :
+        "$ is not a ", "control character");
 }
