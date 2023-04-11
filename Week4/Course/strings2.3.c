@@ -4,9 +4,9 @@
 
 int main(void){
 
-    const char *s1 = "Happy New Year";
-    const char *s2 = "Happy New Year";
-    const char *s3 = "Happy Holidays";
+    const char *s1 = "Happy New Year"; // initialize char pointer
+    const char *s2 = "Happy New Year"; // initialize char pointer
+    const char *s3 = "Happy Holidays"; // initialize char pointer
 
     printf("%s%s\n%s%s\n%s%s\n\n%s%2d\n%s%2d\n%s%2d\n\n",
         "s1 = ", s1, "s2 = ", s2, "s3 = ", s3,
