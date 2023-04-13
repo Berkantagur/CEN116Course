@@ -15,7 +15,7 @@ int main(void){
         printf("%c is an uppercase letter.\n", ch);
 
     else if(islower(ch))
-        printf("%c is an lowercase letter.\n", ch);
+        printf("%c is a lowercase letter.\n", ch);
 
     return 0;
 }
