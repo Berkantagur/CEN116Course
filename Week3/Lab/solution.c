@@ -29,3 +29,13 @@ int isupper(char ch){
         return 0;
 
 }
+
+int islower(char ch){
+
+    if(ch >= 'a' && ch <= 'z')
+        return 1;
+
+    else 
+        return 0;
+
+}
