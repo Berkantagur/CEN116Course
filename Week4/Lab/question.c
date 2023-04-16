@@ -17,8 +17,8 @@ int main(void){
     else if (islower(ch))
         printf("%c is an lowercase letter.\n", ch);
      
-    printf("%c to upper %c", ch, toupper(ch));
-    printf("%c to lower %c", ch, tolower(ch));
+    printf("%c to upper %c\n", ch, toupper(ch));
+    printf("%c to lower %c\n", ch, tolower(ch));
 
     return 0;
 }
