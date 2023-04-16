@@ -10,8 +10,14 @@ int main(void){
     char ch;
     printf("Please enter a character:");
     ch = getchar();
+
     if(isupper(ch))
-        printf("%c is an uppercase letter.\n");
+        printf("%c is an uppercase letter.\n", ch);
+    
+    else if (islower(ch))
+        printf("%c is an lowercase letter.\n", ch);
+     
+
         return 0;
 }
 
