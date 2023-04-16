@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int toupper(char ch);
-int tolower(char ch);
 int isupper(char ch);
 int islower(char ch);
+char toupper(char ch);
+char tolower(char ch);
 
 int main(void){
 
@@ -39,4 +39,14 @@ int islower(char ch){
     
     else 
         return 0;
+}
+
+char toupper(char ch){
+
+    if(islower(ch))
+        return ch - 32;
+    
+    else 
+        return ch;
+
 }
