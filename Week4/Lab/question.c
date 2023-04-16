@@ -48,5 +48,13 @@ char toupper(char ch){
     
     else 
         return ch;
+}
 
+char tolower(char ch){
+
+    if(isupper(ch))
+        return ch + 32;
+    
+    else 
+        return ch;
 }
