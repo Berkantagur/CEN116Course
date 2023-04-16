@@ -14,3 +14,12 @@ int main(void){
         printf("%c is an uppercase letter.\n");
         return 0;
 }
+
+int isupper(char ch){
+
+    if(ch >= 'A' && ch <= 'Z')
+        return 1;
+    
+    else 
+        return 0;
+}
