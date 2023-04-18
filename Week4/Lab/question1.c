@@ -7,7 +7,14 @@ char tolower(char ch);
 
 int main(void){
 
+    int i;
     char ch;
+
+    for(i='a'; i<'z'; i++)
+    {
+        printf("ASCII Code of %c is %d\n", i, i);
+    }
+
     printf("Please enter a character:");
     ch = getchar();
 
