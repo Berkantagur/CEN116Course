@@ -58,7 +58,8 @@ int islower(char ch){
 char toupper(char ch){
 
     if(islower(ch))
-        return ch - 32;
+        //return ch - 32;
+        return ch - ('a'-'A');
     
     else 
         return ch;
