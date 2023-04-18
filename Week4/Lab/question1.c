@@ -10,6 +10,7 @@ int main(void){
     int i, j;
     char ch;
 
+/*
     for(i='a'; i<'z'; i++)
     {
         printf("ASCII Code of %c is %d\n", i, i);
@@ -19,6 +20,7 @@ int main(void){
     {
         printf("ASCII Code of %c is %d\n", j-32, j-32);
     }
+*/
 
     printf("Please enter a character:");
     ch = getchar();
@@ -37,7 +39,7 @@ int main(void){
 
 int isupper(char ch){
 
-    if(ch >= 'A' && ch <= 'Z')
+    if(ch >= 65 && ch <= 90)
         return 1;
     
     else 
@@ -46,7 +48,7 @@ int isupper(char ch){
 
 int islower(char ch){
 
-    if(ch >= 'a' && ch <= 'z')
+    if(ch >= 97 && ch <= 122)
         return 1;
     
     else 
