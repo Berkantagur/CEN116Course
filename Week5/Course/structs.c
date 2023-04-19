@@ -21,4 +21,11 @@ int main(void){
     printf("Enter a second complex number> ");
     scan_complex(&com2);
 
+    printf("\n");
+    print_complex(com1);
+    printf(" + ");
+    print_complex(com2);
+    printf(" = ");
+    print_complex(add_complex(com1, com2));
+
 }
