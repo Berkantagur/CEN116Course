@@ -35,5 +35,13 @@ int main(void){
     printf(" = ");
     print_complex(subtract_complex(com1, com2));
 
-    return 0;
+    return (0);
+}
+
+int scan_complex(complex_t *c)
+{
+    int status;
+    scanf("%f%f", &c->real, &c->imag);
+    status = 1;
+    return (status);
 }
