@@ -72,3 +72,11 @@ complex_t add_complex(complex_t c1, complex_t c2)
     csum.imag = c1.imag + c2.imag;
     return (csum);
 }
+
+complex_t subtract_complex(complex_t c1, complex_t c2)
+{
+    complex_t cdiff;
+    cdiff.real = c1.real + c2.real;
+    cdiff.imag = c1.imag + c2.imag;
+    return (cdiff);
+}
