@@ -28,4 +28,12 @@ int main(void){
     printf(" = ");
     print_complex(add_complex(com1, com2));
 
+    printf("\n\n");
+    print_complex(com1);
+    printf(" - ");
+    print_complex(com2);
+    printf(" = ");
+    print_complex(subtract_complex(com1, com2));
+
+    return 0;
 }
