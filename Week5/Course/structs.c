@@ -45,3 +45,22 @@ int scan_complex(complex_t *c)
     status = 1;
     return (status);
 }
+
+void print_complex(complex_t c)
+{
+    double a, b;
+    char sign;
+
+    a = c.real;
+    b = c.imag;
+
+    printf("(");
+    
+    if (b < 0)
+        sign = '-';
+    else
+        sign = '+';
+    
+    printf("%.2f %c %.2fi", a, sign, fabs(b));
+    printf(")");
+}
